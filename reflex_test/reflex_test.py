@@ -1,6 +1,7 @@
 import reflex as rx
 from reflex_test import style
 from reflex_test.portfolio_es import index_es
+from reflex_test.state import State
 
 def about_me_text() -> rx.Component:
     return rx.vstack(
@@ -248,7 +249,7 @@ def index() -> rx.Component:
             technologies_panel(),
             personal_projects_panel(),
         ),
-        width="60%",
+        width="90%",
         variant= "soft-rounded",
         orientation="vertical",
     ),
@@ -256,7 +257,7 @@ def index() -> rx.Component:
 )
 
 
-app = rx.App()
-app.add_page(index, route="/")
+app = rx.App(state=State)
+app.add_page(index)
 app.add_page(index_es, route="/es")
 app.compile()

@@ -247,7 +247,7 @@ def index_es() -> rx.Component:
             technologies_panel_es(),
             personal_projects_panel_es(),
         ),
-        width="60%",
+        width="90%",
         variant= "soft-rounded",
         orientation="vertical",
     ),
