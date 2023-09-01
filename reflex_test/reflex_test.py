@@ -71,6 +71,8 @@ def technologies_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Python packages", style=style.subheading_style), width="20%"),
@@ -88,6 +90,8 @@ def technologies_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Databases", style=style.subheading_style), width="20%"),
@@ -101,6 +105,8 @@ def technologies_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Deployment", style=style.subheading_style), width="20%"),
@@ -114,6 +120,8 @@ def technologies_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
         ),
     )
@@ -143,6 +151,8 @@ def personal_projects_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Poker", style=style.subheading_style), width="33%"),
@@ -160,6 +170,8 @@ def personal_projects_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Turbine predictive maintenance", style=style.subheading_style), width="33%"),
@@ -177,6 +189,8 @@ def personal_projects_panel() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),            
         ),
     )

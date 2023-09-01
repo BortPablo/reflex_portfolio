@@ -70,6 +70,8 @@ def technologies_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Paquetes Python", style=style.subheading_style), width="20%"),
@@ -87,6 +89,8 @@ def technologies_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Bases de datos", style=style.subheading_style), width="20%"),
@@ -100,6 +104,8 @@ def technologies_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Puesta en producción", style=style.subheading_style), width="20%"),
@@ -113,6 +119,8 @@ def technologies_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
         ),
     )
@@ -142,6 +150,8 @@ def personal_projects_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Póker", style=style.subheading_style), width="33%"),
@@ -159,6 +169,8 @@ def personal_projects_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),
             rx.hstack(
                 rx.vstack(rx.heading("Mantenimiento predictivo de turbinas eólicas", style=style.subheading_style), width="33%"),
@@ -176,6 +188,8 @@ def personal_projects_panel_es() -> rx.Component:
                 ),
                 height="10em",
                 width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
             ),            
         ),
     )
