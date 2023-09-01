@@ -1,29 +1,28 @@
 import reflex as rx
 from reflex_test import style
-from reflex_test.portfolio_es import index_es
 
-def about_me_text() -> rx.Component:
+def about_me_text_es() -> rx.Component:
     return rx.vstack(
-        rx.text("""Graduated in physics with a master's degree in Big Data Analytics. 
-                Currently working as a Data Scientist, engaging with a variety of projects, 
-                including European energy initiatives.""",
+        rx.text("""Graduado en física con un máster en Big Data Analytics.
+                 Actualmente trabajando como Científico de Datos, participando
+                 en una variedad de proyectos, incluyendo iniciativas energéticas europeas.""",
                 style=style.message_style,
                 ),
-        rx.text("""Interested in Artificial Intelligence, data analysis, and visualization.
-                 This portfolio showcases projects that highlight my commitment to leveraging data for meaningful outcomes.
-                 I invite you to explore and connect.""",
+        rx.text("""Interesado en Inteligencia Artificial, el análisis y la visualización de datos.
+                 Este portfolio muestra proyectos que destacan mi compromiso con el aprovechamiento
+                 de los datos para obtener resultados significativos. Te invito a explorar y conectar.""",
                 style=style.message_style,
                 ),
         rx.link(
             rx.button(
-                rx.text("Download CV", style=style.message_style),
+                rx.text("Descargar CV", style=style.message_style),
                 rx.image(src="/icons/cv.png", width="100%", height="100%"),
                 style=style.button_style
                 ),
-            href="https://drive.google.com/uc?id=1NRtDqXdPOhDFerh0NApQIdvkTrrPJCTh&export=download",
+            href="https://drive.google.com/uc?id=1tPkTR6Eh_f-7JZ9qgK6GU5GslPO8N2Jf&export=download",
             ),
         )
-def about_me_image() -> rx.Component:
+def about_me_image_es() -> rx.Component:
     return rx.center(
         rx.image(
             src="/me/me.jpg",
@@ -31,31 +30,31 @@ def about_me_image() -> rx.Component:
             ),
     )
 
-def about_me_tab() -> rx.Component:
+def about_me_tab_es() -> rx.Component:
     return rx.tab(
-        rx.heading("About me", style=style.heading_style),
+        rx.heading("Sobre mí", style=style.heading_style),
         height="10em"
     )
-def about_me_panel() -> rx.Component:
+def about_me_panel_es() -> rx.Component:
     return rx.tab_panel(
         rx.hstack(
             rx.container(
-                about_me_text(),
+                about_me_text_es(),
                 width="50%",
             ),
             rx.container(
-                about_me_image(),
+                about_me_image_es(),
                 width="50%",
             ),
         ),
     )
 
-def technologies_tab() -> rx.Component:
+def technologies_tab_es() -> rx.Component:
     return rx.tab(
-        rx.heading("Technologies", style=style.heading_style),
+        rx.heading("Tecnologías", style=style.heading_style),
         height="10em"
     )
-def technologies_panel() -> rx.Component:
+def technologies_panel_es() -> rx.Component:
     return rx.tab_panel(
         rx.vstack(
             rx.hstack(
@@ -73,7 +72,7 @@ def technologies_panel() -> rx.Component:
                 width="100%",
             ),
             rx.hstack(
-                rx.vstack(rx.heading("Python packages", style=style.subheading_style), width="20%"),
+                rx.vstack(rx.heading("Paquetes Python", style=style.subheading_style), width="20%"),
                 rx.box(
                     rx.hstack(
                         rx.vstack(rx.image(src="/icons/pandas-logo.png"), width="14.2%"),
@@ -90,7 +89,7 @@ def technologies_panel() -> rx.Component:
                 width="100%",
             ),
             rx.hstack(
-                rx.vstack(rx.heading("Databases", style=style.subheading_style), width="20%"),
+                rx.vstack(rx.heading("Bases de datos", style=style.subheading_style), width="20%"),
                 rx.box(
                     rx.hstack(
                         rx.vstack(rx.image(src="/icons/influxdb-logo.png"), width="33%"),
@@ -103,7 +102,7 @@ def technologies_panel() -> rx.Component:
                 width="100%",
             ),
             rx.hstack(
-                rx.vstack(rx.heading("Deployment", style=style.subheading_style), width="20%"),
+                rx.vstack(rx.heading("Puesta en producción", style=style.subheading_style), width="20%"),
                 rx.box(
                     rx.hstack(
                         rx.vstack(rx.image(src="/icons/portainer-logo.png", width="70%", height="70%"), width="33%"),
@@ -118,17 +117,17 @@ def technologies_panel() -> rx.Component:
         ),
     )
 
-def personal_projects_tab() -> rx.Component:
+def personal_projects_tab_es() -> rx.Component:
     return rx.tab(
-        rx.heading("Personal projects", style=style.heading_style),
+        rx.heading("Proyectos personales", style=style.heading_style),
         height="10em"
     )
-def personal_projects_panel() -> rx.Component:
+def personal_projects_panel_es() -> rx.Component:
     return rx.tab_panel(
         rx.vstack(
             rx.hstack(
-                rx.vstack(rx.heading("Calculator", style=style.subheading_style), width="33%"),
-                rx.vstack(rx.text("A simple example of a calculator showing how I usually work in Python.", style=style.message_style), width="33%"),
+                rx.vstack(rx.heading("Calculadora", style=style.subheading_style), width="33%"),
+                rx.vstack(rx.text("Un ejemplo simple de calculadora que muestra cómo suelo trabajar en Python.", style=style.message_style), width="33%"),
                 rx.vstack(
                     rx.link(
                         rx.button(
@@ -145,8 +144,8 @@ def personal_projects_panel() -> rx.Component:
                 width="100%",
             ),
             rx.hstack(
-                rx.vstack(rx.heading("Poker", style=style.subheading_style), width="33%"),
-                rx.vstack(rx.text("Personal project concerning probabilities in poker (Texas Hold'em).", style=style.message_style), width="33%"),
+                rx.vstack(rx.heading("Póker", style=style.subheading_style), width="33%"),
+                rx.vstack(rx.text("Proyecto personal sobre probabilidades en el póker (Texas Hold'em).", style=style.message_style), width="33%"),
                 rx.vstack(
                     rx.link(
                         rx.button(
@@ -162,8 +161,8 @@ def personal_projects_panel() -> rx.Component:
                 width="100%",
             ),
             rx.hstack(
-                rx.vstack(rx.heading("Turbine predictive maintenance", style=style.subheading_style), width="33%"),
-                rx.vstack(rx.text("Personal project improving methodology and models of master thesis for turbine predictive maintenance.", style=style.message_style), width="33%"),
+                rx.vstack(rx.heading("Mantenimiento predictivo de turbinas eólicas", style=style.subheading_style), width="33%"),
+                rx.vstack(rx.text("Proyecto personal que mejora la metodología y los modelos del Trabajo Fin de Máster para el mantenimiento predictivo de turbinas.", style=style.message_style), width="33%"),
                 rx.vstack(
                     rx.link(
                         rx.button(
@@ -181,9 +180,9 @@ def personal_projects_panel() -> rx.Component:
         ),
     )
 
-def contact_me() -> rx.Component:
+def contact_me_es() -> rx.Component:
     return rx.container(
-        rx.text("Feel free to get in touch with me:", style=style.message_style),
+        rx.text("No dudes en contactar conmigo:", style=style.message_style),
         rx.button_group(
             rx.link(
                 rx.button(
@@ -208,41 +207,35 @@ def contact_me() -> rx.Component:
                 ),
             rx.link(
                 rx.button(
-                    rx.text("EN", style=style.message_style),
-                    rx.icon(tag="arrow_forward"),
                     rx.text("ES", style=style.message_style),
+                    rx.icon(tag="arrow_forward"),
+                    rx.text("EN", style=style.message_style),
                     style=style.button_style
                 ),
-                href="/es",
+                href="/",
             ),
             
         ),
         center_content=True,
     )
 
-def index() -> rx.Component:
+def index_es() -> rx.Component:
     return rx.vstack(
     rx.heading("Pablo Bort", style=style.heading_style, height="2em"),
     rx.tabs(
         rx.tab_list(
-            about_me_tab(),
-            technologies_tab(),
-            personal_projects_tab(),
+            about_me_tab_es(),
+            technologies_tab_es(),
+            personal_projects_tab_es(),
         ),
         rx.tab_panels(
-            about_me_panel(),
-            technologies_panel(),
-            personal_projects_panel(),
+            about_me_panel_es(),
+            technologies_panel_es(),
+            personal_projects_panel_es(),
         ),
         width="60%",
         variant= "soft-rounded",
         orientation="vertical",
     ),
-    contact_me(),
+    contact_me_es(),
 )
-
-
-app = rx.App()
-app.add_page(index, route="/")
-app.add_page(index_es, route="/es")
-app.compile()

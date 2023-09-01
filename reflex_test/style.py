@@ -1,8 +1,13 @@
 import reflex as rx
 
-
 gradient = "linear(to-l, #7928CA, #FF0080)"
+background_gradient = "bgGradient='radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);',"
 shadow = "0 0 5px 5px #FF0080"
+
+# Common styles for de app.
+app_style = dict(
+    bgGradient=background_gradient
+)
 
 # Common styles for text.
 message_style = dict(
@@ -28,7 +33,7 @@ button_style = dict(
 # Common styles for headings.
 heading_style = dict(
     #font_family= "Hack Nerd Font Mono",
-    font_size="2em",
+    font_size="2.5em",
     font_weight="bold",
     margin_y="0.25em",
     margin_x="0.25em",
