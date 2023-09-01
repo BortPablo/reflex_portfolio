@@ -28,7 +28,7 @@ button_style = dict(
 # Common styles for headings.
 heading_style = dict(
     #font_family= "Hack Nerd Font Mono",
-    font_size="3em",
+    font_size="2em",
     font_weight="bold",
     margin_y="0.25em",
     margin_x="0.25em",
