@@ -40,11 +40,11 @@ def about_me_panel_es() -> rx.Component:
         rx.hstack(
             rx.container(
                 about_me_text_es(),
-                width="50%",
+                width="60%",
             ),
             rx.container(
                 about_me_image_es(),
-                width="50%",
+                width="40%",
             ),
         ),
     )
