@@ -213,6 +213,7 @@ def contact_me() -> rx.Component:
                     style=style.button_style
                     ),
                 href="https://www.linkedin.com/in/pablo-bort-gomez/",
+                is_external=True
                 ),
             rx.link(
                 rx.button(
@@ -220,6 +221,7 @@ def contact_me() -> rx.Component:
                     style=style.button_style
                     ),
                 href="https://github.com/BortPablo",
+                is_external=True
                 ),
             rx.link(
                 rx.button(

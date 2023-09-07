@@ -20,6 +20,10 @@ setup:
 	@echo "Initializing reflex..."
 	reflex init
 
+run:
+	@echo "Running reflex..."
+	reflex run
+
 clean:
 	@echo "Removing virtual environment..."
 	rm -rf venv

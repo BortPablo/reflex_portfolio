@@ -1,0 +1,8 @@
+version: '3'
+services:
+  pbort-portfolio:
+    image: pbort_portfolio
+    restart: always
+    ports:
+      - "3000:3000"
+    command: reflex run
