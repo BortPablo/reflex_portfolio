@@ -190,7 +190,26 @@ def personal_projects_panel_es() -> rx.Component:
                 width="100%",
                 border_radius="1em",
                 border="1px solid #FF0080",
-            ),            
+            ),
+            rx.hstack(
+                rx.vstack(rx.heading("Reflex portfolio", style=style.subheading_style), width="33%"),
+                rx.vstack(rx.text("Projecto mostrando la estructura de este portfolio con el paquete Reflex.", style=style.message_style), width="33%"),
+                rx.vstack(
+                    rx.link(
+                        rx.button(
+                            rx.image(src="/icons/GitHub_Logo.png", width="100%", height="100%"),
+                            style=style.button_style
+                        ),
+                        href="https://github.com/BortPablo/reflex_portfolio",
+                        is_external=True,
+                    ),
+                    width="33%",
+                ),
+                height="10em",
+                width="100%",
+                border_radius="1em",
+                border="1px solid #FF0080",
+            ),          
         ),
     )
 
