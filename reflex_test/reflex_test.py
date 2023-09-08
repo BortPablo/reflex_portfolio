@@ -260,6 +260,6 @@ def index() -> rx.Component:
 
 
 app = rx.App(state=State)
-app.add_page(index)
-app.add_page(index_es, route="/es")
+app.add_page(index, title="Pablo Bort | Portfolio | EN", route="/")
+app.add_page(index_es, title="Pablo Bort | Portfolio | ES", route="/es")
 app.compile()
