@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Hack Nerd Font';
+    src: url("HackNerdFont-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Hack Nerd Font';
+    font-weight: bold;
+    src: url("HackNerdFont-Bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Hack Nerd Font Mono';
+    src: url("HackNerdFontMono-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Hack Nerd Font Mono';
+    font-weight: bold;
+    src: url("HackNerdFontMono-Bold.ttf") format("opentype");
+}
