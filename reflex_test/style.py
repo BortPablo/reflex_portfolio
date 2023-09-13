@@ -15,7 +15,8 @@ message_style = dict(
     border_radius="5px",
     margin_y="0.25em",
     display="inline-block",
-    font_family= "Hack Nerd Font Mono",
+    #font_family= "Hack Nerd Font Mono",
+    font_family= "Heavy Data Nerd Font",
     font_size="15px",
 )
 

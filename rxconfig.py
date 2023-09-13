@@ -5,5 +5,5 @@ class ReflextestConfig(rx.Config):
 
 config = ReflextestConfig(
     app_name="reflex_test",
-    stylesheets=["fonts/fonts.css"],
+    port=3000,
 )
