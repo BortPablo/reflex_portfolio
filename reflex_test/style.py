@@ -15,8 +15,7 @@ message_style = dict(
     border_radius="5px",
     margin_y="0.25em",
     display="inline-block",
-    #font_family= "Hack Nerd Font Mono",
-    font_family= "Heavy Data Nerd Font",
+    font_family= "Hack Nerd Font Mono",
     font_size="15px",
 )
 
@@ -33,7 +32,7 @@ button_style = dict(
 
 # Common styles for headings.
 heading_style = dict(
-    #font_family= "Hack Nerd Font Mono",
+    # font_family= "Hack Nerd Font Mono",
     font_size="2.5em",
     font_weight="bold",
     margin_y="0.25em",
@@ -44,7 +43,7 @@ heading_style = dict(
 )
 
 subheading_style = dict(
-    #font_family= "Hack Nerd Font Mono",
+    # font_family= "Hack Nerd Font Mono",
     font_size="1.5em",
     text_align="center",
     bgGradient=gradient,

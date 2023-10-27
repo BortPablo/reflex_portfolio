@@ -278,7 +278,12 @@ def index() -> rx.Component:
 )
 
 
-app = rx.App(state=State)
+app = rx.App(
+    state=State,
+    stylesheets=[
+        "fonts/fonts.css",  # This path is relative to assets/
+    ],
+    )
 app.add_page(index, title="Pablo Bort | Portfolio | EN", route="/")
 app.add_page(index_es, title="Pablo Bort | Portfolio | ES", route="/es")
 app.compile()
