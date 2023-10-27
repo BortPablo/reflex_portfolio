@@ -1,6 +1,6 @@
-FROM python:3.8.10
-RUN pip install reflex
-
+FROM python:3.8
+WORKDIR /usr/src/app
+RUN pip3 install reflex
 COPY . .
-
-RUN reflex init
+RUN ["chmod", "+x", "./run.sh"]
+ENTRYPOINT ./run.sh
