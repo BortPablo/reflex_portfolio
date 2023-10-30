@@ -1,2 +1,2 @@
 #!/bin/bash
-reflex run --env prod
+reflex run
