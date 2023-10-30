@@ -3,6 +3,6 @@ WORKDIR /usr/src/app
 RUN pip3 install reflex
 COPY . .
 RUN reflex init
-RUN reflex export
+RUN reflex export --no-zip --frontend-only
 RUN ["chmod", "+x", "./run.sh"]
 ENTRYPOINT ./run.sh
