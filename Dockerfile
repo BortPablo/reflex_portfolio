@@ -5,6 +5,7 @@ COPY . .
 RUN reflex init --loglevel debug
 RUN ["chmod", "+x", "/root/.bashrc"]
 RUN /bin/sh -c /root/.bashrc
+RUN reflex export --no-zip
 RUN ["chmod", "+x", "./run.sh"]
 EXPOSE 3000 8000
 ENTRYPOINT ["./run.sh"]
