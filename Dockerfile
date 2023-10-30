@@ -1,5 +1,6 @@
 FROM python:3.8
 WORKDIR /usr/src/app
+RUN apt update
 RUN pip3 install reflex
 COPY . .
 RUN reflex init
