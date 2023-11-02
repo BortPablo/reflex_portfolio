@@ -1,7 +1,2 @@
-sudo yum check-update
-curl -fsSL https://get.docker.com/ | sh
+sudo yum install docker -y
 sudo systemctl start docker
-sudo systemctl status docker
-sudo systemctl enable docker
-sudo usermod -aG docker $(whoami)
-sudo usermod -aG docker pbort
